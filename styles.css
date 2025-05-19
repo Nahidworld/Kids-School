@@ -31,6 +31,13 @@ a {
 ul {
   list-style-type: none;
 }
+.main-section{
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+}
 .button {
   font-weight: 700;
   font-size: 20px;
@@ -40,6 +47,12 @@ ul {
   border: none;
   color: var(--white);
   background-color: var(--black);
+}
+.section-tittle{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;
+    color: var(--black);
 }
 
 /* navber style  */
@@ -170,5 +183,148 @@ nav .button{
     hr{
         display: block;
         border-bottom: 0.5px solid var(--orange);
+    }
+}
+
+.headlines {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--white);
+    background: #14f000a0;
+}
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.left-banner{
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.banner-tittle{
+    max-width: 90%;
+    font-weight: 700;
+    font-size: 56px;
+    color: var(--black);
+}
+.banner-tittle span:first-child{
+    color: var(--orange);
+}
+
+.banner-tittle span:last-child{
+    color: var(--blue);
+}
+.banner-disc{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black);
+}
+/* banner responsive */
+/* Large responsive */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .right-banner{
+        margin-top: 20px;
+        max-width: calc(100% - 16px);
+    }
+
+    .right-banner img{
+        width: 100%;
+    }
+
+    .left-banner{
+        max-width: calc(100% - 16px);
+        gap: 18px;
+        text-align: center;
+    }
+
+    .banner-tittle{
+        max-width: 335px;
+        font-size: 32px;
+        margin: 0 auto;
+    }
+
+    .banner-disc{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .left-banner button{
+        font-size: 16px;
+        padding: 6px 24px;
+    }
+}
+/* Tablets responsive  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .right-banner{
+        margin-top: 20px;
+        max-width: calc(100% - 16px);
+    }
+
+    .right-banner img{
+        width: 100%;
+    }
+
+    .left-banner{
+        max-width: calc(100% - 16px);
+        gap: 18px;
+        text-align: center;
+    }
+
+    .banner-tittle{
+        max-width: 335px;
+        font-size: 32px;
+        margin: 0 auto;
+    }
+
+    .banner-disc{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .left-banner button{
+        font-size: 16px;
+        padding: 6px 24px;
+    }
+}
+/* mobile responsive  */
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;        
+    }
+
+    .right-banner{
+        margin-top: 20px;
+        max-width: calc(100% - 16px);
+    }
+
+    .right-banner img{
+        width: 100%;
+    }
+
+    .left-banner{
+        max-width: calc(100% - 16px);
+        gap: 18px;
+        text-align: center;
+    }
+
+    .banner-tittle{
+        max-width: 335px;
+        font-size: 32px;
+        margin: 0 auto;
+    }
+
+    .banner-disc{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .left-banner button{
+        font-size: 16px;
+        padding: 6px 24px;
     }
 }
