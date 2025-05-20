@@ -354,15 +354,15 @@ hr {
   transition: 0.3s;
 }
 /* card background color and border  */
-.card1 {
+.card-1 {
   background: linear-gradient(#def5ff, #ffffff);
   border: 1px solid #def5ff;
 }
-.card2 {
+.card-2 {
   background: linear-gradient(#fff4dc, #ffffff);
   border: 1px solid #fff4dc;
 }
-.card3 {
+.card-3 {
   background: linear-gradient(#eee1ff, #ffffff);
   border: 1px solid #f2e8ff;
 }
@@ -395,10 +395,10 @@ hr {
   font-weight: 700;
   font-size: 15px;
 }
-.card2 .btn a {
+.card-2 .btn a {
   color: #f0aa00;
 }
-.card3 .btn a {
+.card-3 .btn a {
   color: #8700ff;
 }
 
@@ -584,16 +584,63 @@ hr {
 }
 
 
+/* stories responsive  */
+/* Tablets responsive  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #card1 {
+        max-width: calc(100% - 16px);
+        margin: 0 auto;
+    }
+    #card1-date {
+        font-size: 12px;
+        padding: 13px 19px;
+        left: 8%;
+    }
+    .card1-text {
+        padding: 45px 38px 42px;
+    }
+    .card1-tittle {
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
 
+    .card-date {
+        font-size: 11px;
+        padding: 6px 11px;
+        border-radius: 28px;
+        bottom: -3%;
+    }
+    .card-tittle {
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    
+    .card-container {
+        margin: 40px 0;
+    }
+    
+    .card2{
+        gap: 11px;
+    }
 
-
-
-
-
-
-
-
+    .card-date {
+        font-size: 9px;
+        padding: 6px 11px;
+        border-radius: 28px;
+        bottom: -3%;
+        left: 10%;
+    }
+    .card-tittle {
+        font-size: 10px;
+        padding: 25px 20px 33px 23px;
+    }
+  }
 
 /* footer style */
 footer{
@@ -640,3 +687,53 @@ footer .div3 h2{
 footer .div3 .flex{
     gap: 10px;
 }
+
+
+
+/* footer responsive  */
+/* Tablets responsive  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    footer .div1 h1 {
+        font-size: 36px;
+    }
+    footer .div1 .disc {
+        font-size: 18px;
+    }
+    footer .div2 h3 {
+    font-size: 24px;
+    margin-bottom: 26px;
+    }
+    footer .div2 ul a {
+    font-size: 17px;
+    margin-bottom: 16px;
+    }
+    footer .div3 h2 {
+    font-size: 22px;
+    margin-bottom: 28px;
+    }
+  }
+
+/* mobile responsive  */
+@media screen and (max-width: 576px) {
+    footer .div1 h1 {
+        font-size: 36px;
+    }
+    footer .div1 .disc {
+        font-size: 16px;
+    }
+
+    footer .div2 h3 {
+    font-size: 24px;
+    margin-bottom: 26px;
+    }
+    footer .div2 ul a {
+    font-size: 17px;
+    margin-bottom: 16px;
+    }
+    footer .div3 h2 {
+    font-size: 22px;
+    margin-bottom: 28px;
+    }
+}
+
+
